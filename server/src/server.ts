@@ -1,13 +1,16 @@
 import Fastify from 'fastify'
+import cors from '@fastify/cors'
+import { PrismaClient } from '@prisma/client'
 
 const app = Fastify()
+const prisma = new PrismaClient()
 
-/**
- * Método HTTP: GET, POST, PUT DELETE
- */
+app.register(cors) // Qualquer aplicação pode consumir esse back-end
 
-app.get('/', () => {
-  return 'Hello World'
+app.get('/', async () => {
+  const habits = await prisma.habit.findMany()
+
+  return habits
 })
 
 app
