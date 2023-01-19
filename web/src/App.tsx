@@ -1,10 +1,13 @@
-import "./styles/global.css";
+import './styles/global.css'
 
-function App() {
+import logoImage from './assets/logo.svg'
 
+export function App() {
   return (
-    <h1 className="bg-zinc-900 w-10 text-yellow-300 rounded">Hello</h1>
+    <div className="w-screen h-screen flex justify-center items-center">
+      <div className="w-full max-w-5xl px-6 flex flex-col gap-16">
+        <img src={logoImage} alt="" />
+      </div>
+    </div>
   )
 }
-
-export default App
