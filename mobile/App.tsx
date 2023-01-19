@@ -23,7 +23,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Olá</Text>
+      <Text style={styles.text}>Hello World</Text>
       <StatusBar
         barStyle={'light-content'}
         backgroundColor="transparent"
@@ -42,8 +42,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 50,
-    color: 'green',
-    backgroundColor: 'yellow',
+    color: '#7C3AED',
     fontFamily: 'Inter_400Regular',
   },
 })
