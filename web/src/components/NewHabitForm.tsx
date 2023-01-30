@@ -24,12 +24,8 @@ export function NewHabitForm() {
 
   function handleToogleWeekDay(weekDay: number) {
     if (weekDays.includes(weekDay)) {
-      // const weekDaysWithRemovedOne = weekDays.filter(day => day !== weekDay)
-      // setWeekDays(weekDaysWithRemovedOne)
       setWeekDays((state) => state.filter((day) => day !== weekDay))
     } else {
-      // const weekDaysWithAddedOne = [...weekDays, weekDay]
-      // setWeekDays(weekDaysWithAddedOne)
       setWeekDays((state) => [...state, weekDay])
     }
   }
