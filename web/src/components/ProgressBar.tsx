@@ -16,7 +16,7 @@ export function ProgressBar({ progress }: ProgressBarProps) {
         aria-valuenow={progress}
         // aria-valuemin={0} // acho que esse é o padrão, esse valor seria pra tamanhos diferentes
         // aria-valuemax={100}
-        className="h-3 rounded-xl bg-violet-600"
+        className="h-3 rounded-xl bg-violet-600 transition-all"
         style={progressStyle}
       />
     </div>
