@@ -32,7 +32,6 @@ export function Home() {
       setLoading(true)
       const { data } = await api.get('/summary')
       setSummary(data)
-      console.log(data)
     } catch (error) {
       Alert.alert('Ops', 'Não foi possível carregar o sumário de hábitos')
       console.log(error)
